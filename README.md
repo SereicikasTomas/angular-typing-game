@@ -1,7 +1,6 @@
 # Typing
 
-This is a typing game.
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+This is a typing game. Project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
 ## Development server
 
