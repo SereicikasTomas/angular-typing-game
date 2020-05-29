@@ -1,0 +1,28 @@
+.container {
+  padding: 3rem 4rem;
+  border-radius: 5px;
+  background: var(--bg-color);
+  text-align: center;
+  box-shadow: 0 2rem 4rem var(--shadow-color);
+  max-width: 900px;
+
+  :not(:first-child) {
+    margin-top: 5rem;
+  }
+  h1 {
+  }
+
+  p {
+  }
+
+  input {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  h2 {
+    padding: 2rem;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 1rem 2rem var(--shadow-color);
+  }
+}
