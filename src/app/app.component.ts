@@ -10,9 +10,19 @@ export class AppComponent {
   randomText = lorem.sentence();
   userInput = '';
   correct = false;
+  splitChars = this.randomText.split('');
 
   onInput(value: string) {
     this.userInput = value;
+
     if (this.userInput === this.randomText) this.correct = true;
+  }
+
+  check(char: string, input: string) {
+    if (!input) {
+      return;
+    }
+
+    return char === input ? 'correct' : 'wrong';
   }
 }
