@@ -1,8 +1,16 @@
 <div class="container">
   <h1>Typing Challenge</h1>
-  <p>
-    {{ randomText }}
-  </p>
-  <input type="text" (input)="onInput($event.target.value)" />
-  <h2 *ngIf="correct">Success!</h2>
+  <div>
+    <span
+      [class]="check(char, userInput[i])"
+      *ngFor="let char of splitChars; index as i"
+      >{{ char }}</span
+    >
+  </div>
+  <input
+    placeholder="Start typing here..."
+    type="text"
+    (input)="onInput($event.target.value)"
+  />
+  <h2 *ngIf="correct">Good job!</h2>
 </div>
