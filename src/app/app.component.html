@@ -11,6 +11,7 @@
     placeholder="Start typing here..."
     type="text"
     (input)="onInput($event.target.value)"
+    spellcheck="false"
   />
   <h2 *ngIf="correct">Good job!</h2>
 </div>
