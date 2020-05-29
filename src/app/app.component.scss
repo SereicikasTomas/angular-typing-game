@@ -9,10 +9,13 @@
   :not(:first-child) {
     margin-top: 5rem;
   }
-  h1 {
+
+  .correct {
+    color: #219b21;
   }
 
-  p {
+  .wrong {
+    color: #9b2121;
   }
 
   input {
