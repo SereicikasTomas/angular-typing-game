@@ -15,7 +15,7 @@ export class AppComponent {
   onInput(value: string) {
     this.userInput = value;
 
-    if (this.userInput === this.randomText) this.correct = true;
+    this.correct = this.userInput === this.randomText ? true : false;
   }
 
   check(char: string, input: string) {

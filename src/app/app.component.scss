@@ -6,21 +6,30 @@
   box-shadow: 0 2rem 4rem var(--shadow-color);
   max-width: 900px;
 
+  h1 {
+    padding-bottom: 5rem;
+  }
+
   :not(:first-child) {
     margin-top: 5rem;
   }
 
   .correct {
-    color: #219b21;
+    color: #14df14;
   }
 
   .wrong {
-    color: #9b2121;
+    color: #e61212;
   }
 
   input {
     width: 100%;
     padding: 2rem;
+    background: transparent;
+    border: 1px solid var(--shadow-color);
+    border-radius: 5px;
+    outline: var(--shadow-color);
+    color: var(--text-color);
   }
 
   h2 {
