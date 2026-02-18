@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { lorem } from 'faker';
+import { faker } from '@faker-js/faker';
 
 @Component({
   selector: 'app-root',
+  standalone: false,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  randomText = lorem.sentence();
+  randomText = faker.lorem.sentence();
   userInput = '';
   correct = false;
   splitChars = this.randomText.split('');

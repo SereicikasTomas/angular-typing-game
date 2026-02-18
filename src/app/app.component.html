@@ -1,17 +1,20 @@
 <div class="container">
   <h1>Typing Challenge</h1>
   <div>
-    <span
-      [class]="check(char, userInput[i])"
-      *ngFor="let char of splitChars; index as i"
-      >{{ char }}</span
-    >
+    @for (char of splitChars; track $index; let i = $index) {
+      <span
+        [class]="check(char, userInput[i])"
+        >{{ char }}</span
+        >
+      }
+    </div>
+    <input
+      placeholder="Start typing here..."
+      type="text"
+      (input)="onInput($event.target.value)"
+      spellcheck="false"
+      />
+    @if (correct) {
+      <h2>Good job!</h2>
+    }
   </div>
-  <input
-    placeholder="Start typing here..."
-    type="text"
-    (input)="onInput($event.target.value)"
-    spellcheck="false"
-  />
-  <h2 *ngIf="correct">Good job!</h2>
-</div>
